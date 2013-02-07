@@ -1,0 +1,48 @@
+CCS PCH C Compiler, Version 4.124, 5967               07-fev-13 14:37
+
+               Filename: C:\Users\cuki\Eletronica\Projetos\SoftStart\main.lst
+
+               ROM used: 26 bytes (0%)
+                         Largest free fragment is 32742
+               RAM used: 4 (0%) at main() level
+                         4 (0%) worst case
+               Stack:    0 locations
+
+*
+0000:  GOTO   0004
+.................... /* 
+....................  * main.c 
+....................  * 
+....................  *  Created on: 07/02/2013 
+....................  *      Author: cuki 
+....................  */ 
+....................  
+.................... #include<18F452.h> 
+.................... //////// Standard Header file for the PIC18F452 device //////////////// 
+.................... #device PIC18F452 
+.................... #list 
+....................  
+....................  
+.................... int main(void) { 
+0004:  CLRF   FF8
+0006:  BCF    FD0.7
+0008:  CLRF   FEA
+000A:  CLRF   FE9
+000C:  BSF    FC1.0
+000E:  BSF    FC1.1
+0010:  BSF    FC1.2
+0012:  BCF    FC1.3
+.................... 	return 0; 
+0014:  MOVLW  00
+0016:  MOVWF  01
+.................... } 
+0018:  SLEEP 
+
+Configuration Fuses:
+   Word  1: 2700   RC_IO NOOSCSEN
+   Word  2: 0E0E   PUT BROWNOUT BORV20 NOWDT WDT128
+   Word  3: 0100   CCP2C1
+   Word  4: 0081   STVREN NOLVP NODEBUG
+   Word  5: C00F   NOPROTECT NOCPB NOCPD
+   Word  6: E00F   NOWRT NOWRTC NOWRTB NOWRTD
+   Word  7: 400F   NOEBTR NOEBTRB
