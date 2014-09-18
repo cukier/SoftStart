@@ -1,0 +1,58 @@
+
+ROM used: 1286 (4%)
+          1286 (4%) including unused fragments
+
+          2 Average locations per line
+          16 Average locations per statement
+
+RAM used: 33 (2%) at main() level
+          46 (3%) worst case
+
+Stack used: 6 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   79    42  52  main.c
+  359     0   0  ..\..\..\..\..\PICC\devices\18F452.h
+   88    38  48  lcd_8b.c
+----- -----
+  526    80 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1   1             @delay_ms1
+0     36   1   1    98  1.3  lcd_cmd
+0     38   1   2   127  1.8  lcd_envia_byte
+0     34   1   3   173  5.0  lcd_pos_xy
+0     74   3   1   290  4.1  lcd
+0     78   3   1   334  2.9  lcd_init
+0     40   2   0   132  2.2  ext_isr
+0     80   3   0   380  3.8  ccp1_isr
+0    176   7   1   444  4.9  MAIN
+0     56   2   2             @ITOF
+0    348  14  14             @DIVFF
+0     58   2   4             @SFTOI
+0     14   1   0             @const92
+0     34   1   2             @PSTRINGC_73
+
+Program metrics:
+    Functions               8
+    Statements              80
+    Comments                101
+    Volume (V)              3118
+    Difficilty (D)          24.8
+    Effort to implement (E) 77209
+    Time to implement (T)   1 hours, 11 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   9
+    Maintainability (MI)    67
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000B8   178  0  
+000BA-07FFE  1104  31478  
+
+
+

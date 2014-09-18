@@ -1,0 +1,31 @@
+ÀÄmain
+   ÃÄMAIN  0/176  Ram=1
+   ³  ÃÄ??0??
+   ³  ÃÄlcd_init  0/78  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÃÄlcd_cmd  0/36  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÃÄlcd_cmd  0/36  Ram=1
+   ³  ³  ÃÄlcd_cmd  0/36  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÃÄlcd_cmd  0/36  Ram=1
+   ³  ³  ÀÄlcd_cmd  0/36  Ram=1
+   ³  ÃÄ@ITOF  0/56  Ram=2
+   ³  ÃÄ@DIVFF  0/348  Ram=14
+   ³  ÃÄ@SFTOI  0/58  Ram=4
+   ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ÃÄ@PSTRINGC_73  0/34  Ram=2
+   ³  ³  ÀÄlcd  0/74  Ram=1
+   ³  ³     ÃÄlcd_envia_byte  0/38  Ram=2
+   ³  ³     ³  ÀÄlcd_cmd  0/36  Ram=1
+   ³  ³     ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³     ÃÄlcd_pos_xy  0/34  Ram=3
+   ³  ³     ³  ÀÄlcd_envia_byte  0/38  Ram=2
+   ³  ³     ³     ÀÄlcd_cmd  0/36  Ram=1
+   ³  ³     ÃÄlcd_envia_byte  0/38  Ram=2
+   ³  ³     ³  ÀÄlcd_cmd  0/36  Ram=1
+   ³  ³     ÀÄlcd_envia_byte  0/38  Ram=2
+   ³  ³        ÀÄlcd_cmd  0/36  Ram=1
+   ³  ÀÄ@delay_ms1  0/38  Ram=1
+   ÃÄext_isr  0/40  Ram=0
+   ÀÄccp1_isr  0/80  Ram=0

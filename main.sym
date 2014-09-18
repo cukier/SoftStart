@@ -1,0 +1,121 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019.0   ctrl
+01A-01B nr_divisoes
+01C-01D ccp_step
+01E-01F ccp_cont
+020-023 @SFTOI.P1
+020-021 @ITOF.P2
+020     lcd_init.conta
+020-023 @DIVFF.P1
+020     MAIN.@SCRATCH1
+020     @PSTRINGC_73.@SCRATCH1
+021     @PSTRINGC_73.@SCRATCH2
+022     lcd.c
+023     @delay_ms1.P1
+023     lcd_pos_xy.x
+024-027 @DIVFF.P1
+024     lcd_pos_xy.y
+025     lcd_pos_xy.endereco
+026     lcd_envia_byte.nivel
+027     lcd_envia_byte.dado
+028     lcd_cmd.cmd
+028     @DIVFF.@SCRATCH1
+029     @DIVFF.@SCRATCH2
+02A     @DIVFF.@SCRATCH3
+02B     @DIVFF.@SCRATCH4
+02C     @DIVFF.@SCRATCH5
+02D     @DIVFF.@SCRATCH6
+F83     PSP_DATA
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0140  @delay_ms1
+0166  lcd_cmd
+03A6  lcd_envia_byte
+03CC  lcd_pos_xy
+03EE  lcd
+018A  lcd_init
+00BA  ext_isr
+00E2  ccp1_isr
+045A  MAIN
+01D8  @ITOF
+0210  @DIVFF
+036C  @SFTOI
+0132  @const92
+0438  @PSTRINGC_73
+045A  @cinit
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\cuki\Eletronica\Projetos\SoftStart\
+
+Project Files:
+    main.c                                                  [26-fev-13 08:00  CRC=EBA567F4]
+    ..\..\..\..\..\PICC\devices\18F452.h                    [09-jan-13 12:23  CRC=E6127A61]
+    lcd_8b.c                                                [21-mar-12 12:09  CRC=08B41DBA]
+
+Source signature=E3201DC9
+
+Units:
+    C:\Users\cuki\Eletronica\Projetos\SoftStart\main (main)
+
+Compiler Settings:
+    Processor:      PIC18F452
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.PJT
+    Call Tree:   main.tre
+    Statistics:  main.STA
